@@ -1,0 +1,23 @@
+{
+  "name": "house_of_spoons_redone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/styles.css -o build/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "express": "^4.17.3",
+    "postcss-cli": "^9.1.0",
+    "save": "^2.4.0",
+    "watch": "^1.0.2"
+  }
+}

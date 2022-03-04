@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.5.3/ethers.umd.min.js"
+      integrity="sha512-DGSIUFeBFmS0D++IURtKLQf2bjsw7VNvtEm5jg4uxwM/EFB1sfbROoG21dy1PR13NXx0oT64KkcIv1HC/MFl2Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="staking.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="staking.js"></script>
+    <title>Staking</title>
+  </head>
+
+  <body
+    style="
+      background-image: url(https://cdn.discordapp.com/attachments/923217257914572840/925619501096112138/Cave_BG.jpg);
+    "
+    class="bg-cover bg-center"
+    alt="..."
+  >
+    <div id="content" class="hidden">
+      <div id="stakeble" class="scrollableContent">
+        <div id="stakableSlider" class="bstimeslider">
+          <div class="viewContainer">
+            <div id="showStakable" class="tslshow"></div>
+          </div>
+          <button class="arrows leftArrow">&lt</button>
+          <button class="arrows rightArrow">&gt</button>
+        </div>
+        <button id="stakeBtn"   class="w-full px-4 py-2 tracking-wide text-white 
+        transition-colors duration-200 transform 
+        bg-blue-500 rounded-md hover:bg-blue-400 
+        focus:outline-none focus:bg-blue-400 focus:ring 
+        focus:ring-blue-300 focus:ring-opacity-50">Stake</button>
+      </div>
+      <div id="staked" class="scrollableContent">
+        <div id="stakedSlider" class="bstimeslider">
+          <div class="viewContainer">
+            <div id="showStaked" class="tslshow"></div>
+          </div>
+          <button class="arrows leftArrow">&lt</button>
+          <button class="arrows rightArrow">&gt</button>
+        </div>
+        <button id="unstakeBtn"   class="w-full px-4 py-2 
+        tracking-wide text-white transition-colors 
+        duration-200 transform bg-blue-500 rounded-md 
+        hover:bg-blue-400 focus:outline-none focus:bg-blue-400 
+        focus:ring focus:ring-blue-300 focus:ring-opacity-50">Unstake</button>
+      </div>
+      <div id="claimContent">
+        <div id="claimAmmount">0 eth to claim!</div>
+        <button
+          id="claimBtn"
+          class="m-2 p-10 text-white rounded-xl transition-all duration-500 bg-gradient-to-tl from-[#4579F9] via-[#4C47F3] to-[#4DBEE1] bg-size-200 bg-pos-0 hover:bg-pos-100"
+        >
+          Claim
+        </button>
+      </div>
+    </div>
+    <div
+      id="landing_page"
+      class="bg-cover"
+      style="
+        background-image: url(https://cdn.discordapp.com/attachments/923217257914572840/925619501096112138/Cave_BG.jpg);
+      "
+    >
+      <div class="flex justify-center h-screen">
+        <div class="hidden lg:block lg:w-2/3">
+          <div class="flex items-center h-full px-20">
+            <div>
+              <h2 class="text-4xl font-bold text-white">Title WIP</h2>
+
+              <p class="max-w-xl mt-3 text-gray-300">
+                Lock and stake your NFTs to earn rewards and governance rights
+                in the House of Spoons. Each locked NFT will earn you a monthly
+                reward which increases over time. Stake and earn but don't be
+                late or your reward will get claimed!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+          <div class="flex-1">
+            <div class="text-center">
+              <h2
+                class="text-4xl font-bold text-center text-gray-700 dark:text-white"
+              >
+                Claim your NFT
+              </h2>
+              <button
+              class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+              id="checkWalletConnection1"
+            >
+              Connect wallet to continue.
+            </button>
+            </div>
+
+           
+      
+   
+    </div>
+    <button id="approveBtn" class="contentBtn hidden">Unlock NFTs for staking</button>
+  </body>
+</html>
