@@ -290,9 +290,10 @@ $(document).ready(function() {
     </div>`
     document.body.appendChild(modal);
 
-    document.getElementById("checkWalletConnection1").addEventListener("click", async() => {
+    document.getElementById("checkWalletConnection").addEventListener("click", async() => {
         if (await verifyWalletConnection()) {
-            document.getElementById("landing_page").remove();
+            document.getElementById("checkWalletConnection").remove();
+            document.getElementById("description").remove();
             let approveBtn = document.getElementById("approveBtn");
             console.log("main user address", `[${window.ethereum.selectedAddress}]`);
             console.log("main contract address", `[${config.contractAddress}]`);

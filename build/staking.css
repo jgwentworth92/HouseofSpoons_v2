@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .scrollableContent {
     width: 500px;
     margin: 5px;
@@ -125,7 +127,7 @@ img {
     transform: translateX(-50%) translateY(-50%);
 }
 
-#checkWalletConnection,
+
 #approveBtn {
     position: absolute;
     top: 50%;
