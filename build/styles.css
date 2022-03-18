@@ -427,6 +427,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .static {
   position: static;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.right-0 {
+  right: 0px;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -449,8 +461,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full {
   height: 100%;
 }
+.h-32 {
+  height: 8rem;
+}
 .w-full {
   width: 100%;
+}
+.w-32 {
+  width: 8rem;
 }
 .flex-1 {
   flex: 1 1 0%;
